@@ -27,8 +27,10 @@ def four_point_transform(image, pts):
 	# compute the width of the new image, which is the
 	# maximum geometric distance between (bottom_right and bottom_left)
 	# and (top_right and top_left)
-	width_bottom = np.sqrt(((bottom_right[0] - bottom_left[0]) ** 2) + (bottom_right[1] - bottom_left[1] ** 2 ))
+	width_bottom = np.sqrt(((bottom_right[0] - bottom_left[0]) ** 2) + (bottom_right[1] - bottom_left[1]) ** 2 )
 	width_top = np.sqrt(((top_right[0] - top_left[0]) ** 2) + ((top_right[1] - top_left[1]) ** 2 ))
+	# break
+	import code; code.interact(local=dict(globals(), **locals()))
 	width_image = max(int(width_bottom), int(width_top))
 
 	# compute the height of the new image, which is the maximum

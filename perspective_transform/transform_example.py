@@ -1,7 +1,7 @@
 from transform import four_point_transform
-import numpy as np 
-import argparse 
-import cv2 
+import numpy as np
+import argparse
+import cv2
 
 # construct the argument parser 
 ap = argparse.ArgumentParser()
